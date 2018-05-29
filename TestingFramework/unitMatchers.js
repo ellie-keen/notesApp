@@ -13,5 +13,14 @@ var assert = {
     } else {
       console.log('%c You shall not pass! ', 'background: #222; color: orange');
     }
+  },
+
+  toEqual : function(object1, object2) {
+    if (JSON.stringify.object1 === JSON.stringify.object2) {
+      console.log('%c Pass! ', 'background: #222; color: #bada55');
+    } else {
+      console.log('%c You shall not pass! ', 'background: #222; color: orange');
+    }
   }
+
 };
