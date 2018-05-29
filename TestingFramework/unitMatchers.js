@@ -21,6 +21,14 @@ var assert = {
     } else {
       console.log('%c You shall not pass! ', 'background: #222; color: orange');
     }
+  },
+
+  toInclude : function(object1, object2) {
+    if (object1.includes(object2)){
+      console.log('%c Pass! ', 'background: #222; color: #bada55');
+    } else {
+      console.log('%c You shall not pass! ', 'background: #222; color: orange');
+    }
   }
 
 };
