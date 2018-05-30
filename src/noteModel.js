@@ -4,8 +4,8 @@
   };
 
   Note.prototype.displayText = function() {
-      return this.text;
-    };
+    return this.text;
+  };
 
   exports.Note = Note;
 
