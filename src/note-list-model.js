@@ -1,10 +1,11 @@
 (function(exports) {
-  function noteModel(note){
+  function noteModel(){
     this.array = [];
-    this.array.push(note)
   };
-
-  noteModel.prototype.displayArray = function() {
+  noteModel.prototype.addNote = function(note) {
+      return this.array.push(note);
+  }
+  noteModel.prototype.displayNotes = function() {
       return this.array;
     };
 
