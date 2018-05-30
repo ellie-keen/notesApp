@@ -1,0 +1,27 @@
+{
+  "name": "noteapp",
+  "version": "1.0.0",
+  "description": "vanilla javascript application",
+  "main": "index.js",
+  "scripts": {
+    "test": "open TestingFramework/specRunner.html",
+    "start": "node node_modules/http-server/bin/http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ellie-keen/vanilla-javascript-framework.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "ellie keen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ellie-keen/vanilla-javascript-framework/issues"
+  },
+  "homepage": "https://github.com/ellie-keen/vanilla-javascript-framework#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
