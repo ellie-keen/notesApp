@@ -1,17 +1,20 @@
 describe('Creating a note list model');
-  var testNoteModel = new noteModel();
-  var notes = new noteModel();
+  var testNoteModel1 = new noteModel();
 
   it('should be instantiated with an empty array');
-    assert.toEqual(testNoteModel.array, []);
+    assert.toEqual(testNoteModel1.array, []);
+
+describe('#addNote');
+  var testNoteModel2 = new noteModel();
 
   it('should be able to #addNote to the model array');
-    testNoteModel.addNote(new Note("test"));
-    assert.toEqual(testNoteModel.array, [{text: "test"}]);
+    testNoteModel2.addNote("test");
+    assert.toEqual(testNoteModel2.array, [{text: "test"}]);
+
+describe('#displayNote')
+  var testNoteModel3 = new noteModel();
 
   it('should #displayNotes within an array');
-    notes.addNote(new Note("uber"));
-    notes.addNote(new Note("mega"));
-    assert.toEqual(notes.displayNotes(), [{text: "uber"}, {text: "mega"}]);
-
-  it('should store the text property of the note');
+    testNoteModel3.addNote("uber");
+    testNoteModel3.addNote("mega");
+    assert.toEqual(testNoteModel3.displayNotes(), [{text: "uber"}, {text: "mega"}]);
