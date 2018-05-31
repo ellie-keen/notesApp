@@ -1,4 +1,4 @@
-describe('NoteListModel');
+describe('NoteList');
   describe('#array');
     it('should be instantiated with an empty array');
       var testNoteList1 = new NoteList();
