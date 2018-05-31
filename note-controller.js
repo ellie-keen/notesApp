@@ -1,2 +1,6 @@
 var hello = document.getElementById('app');
-console.log(hello)
+
+function changeWord(hello){
+  document.body.innerHTML = "howdy";
+}
+console.log(changeWord());
