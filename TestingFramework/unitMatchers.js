@@ -36,7 +36,15 @@
       } else {
         console.log(failTest, orange);
       }
-    }
+    },
+
+    toExist: function(object) {
+     if (typeof condition !== 'undefined') {
+       console.log(passTest, green);
+     } else {
+       console.log(failTest, orange);
+     };
+   }
   };
 
   exports.assert = assert;
