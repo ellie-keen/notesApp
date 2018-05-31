@@ -4,9 +4,12 @@
   };
 
   NoteListView.prototype.viewList = function() {
+    if (this.noteList.getNotes().length == 0) {
+      return ''
+    }
     var htmlString = '<ul>';
-    noteList.displayNotes().forEach(function(note) {
-    htmlString += `<li>${note.text}</li>`;
+    this.noteList.getNotes().forEach(function(note) {
+    htmlString += `<li><div>${note.text}</div></li>`;
     });
     return htmlString += '</ul>';
   };

@@ -2,12 +2,12 @@
   function NoteList() {
     this.array = [];
   };
-  
+
   NoteList.prototype.addNote = function(string) {
       return this.array.push(new Note(string));
   };
 
-  NoteList.prototype.displayNotes = function() {
+  NoteList.prototype.getNotes = function() {
       return this.array;
   };
 

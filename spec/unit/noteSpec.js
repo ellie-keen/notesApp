@@ -4,7 +4,7 @@ describe('Note');
       var testNote = new Note('this is a test');
       assert.toEqual(testNote.text, 'this is a test');
 
-  describe('#displayText');    
+  describe('#getText');
     it('should display the text property');
       var testNote = new Note('test');
-      assert.toEqual(testNote.displayText(), 'test')
+      assert.toEqual(testNote.getText(), 'test')

@@ -10,9 +10,9 @@ describe('NoteListModel');
       testNoteList2.addNote("test");
       assert.toEqual(testNoteList2.array, [{text: "test"}]);
 
-  describe('#displayNotes')
+  describe('#getNotes')
     it('should display notes within an array');
       var testNoteList3 = new NoteList();
       testNoteList3.addNote("test");
       testNoteList3.addNote("test");
-      assert.toEqual(testNoteList3.displayNotes(), [{text: "test"}, {text: "test"}]);
+      assert.toEqual(testNoteList3.getNotes(), [{text: "test"}, {text: "test"}]);
