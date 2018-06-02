@@ -9,7 +9,7 @@
     }
     var htmlString = '<ul>';
     this.noteList.getNotes().forEach(function(note) {
-    htmlString += `<li><div>${note.text}</div></li>`;
+      htmlString += `<li><div>${note.text}</div></li>`;
     });
     return htmlString += '</ul>';
   };

@@ -38,7 +38,7 @@
       }
     },
 
-    toExist: function(object) {
+    toExist : function(object) {
      if (typeof condition !== 'undefined') {
        console.log(passTest, green);
      } else {

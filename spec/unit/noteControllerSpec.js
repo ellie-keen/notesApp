@@ -1,5 +1,5 @@
 describe('NoteController');
-  describe('constructor')
+  describe('constructor');
     it('should take a note list model as a parameter');
       var noteList = new NoteList();
       var noteController = new NoteController(new NoteList());
@@ -18,7 +18,7 @@ describe('NoteController');
       var appId = document.getElementById('app');
       var noteList = new NoteList();
       var noteController = new NoteController(noteList);
-      
+
       noteController.displayHTML();
       appId = document.getElementById('app');
       assert.toEqual(appId.innerHTML, '<ul><li><div>Favourite drink: seltzer</div></li></ul>')
