@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "open TestingFramework/specRunner.html",
-    "start": "node node_modules/http-server/bin/http-server"
+    "start": "node node_modules/http-server/bin/http-server -o"
   },
   "repository": {
     "type": "git",
